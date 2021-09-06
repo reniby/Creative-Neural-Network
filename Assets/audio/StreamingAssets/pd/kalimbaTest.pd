@@ -1,0 +1,20 @@
+#N canvas -9 -9 1920 976 10;
+#X obj 172 52 netreceive 32000;
+#X obj 245 171 bng 15 250 50 0 empty sine_on empty 17 7 0 10 -262144
+-1 -1;
+#X text 288 163 To hear the sine wave \, send a bang with send id "sine_on"
+via tcp. Libpd will handle this internally once deployed on iOS and
+Android.;
+#X text 293 53 TCP Kalimba network receiver (no more wires necessary!)
+;
+#X text 170 10 Kalimba Sinewave Test;
+#X obj 30 540 cnv 15 1024 25 empty empty AAU_CPH_Credits: 20 12 1 14
+-33173 -262144 0;
+#X obj 136 571 pddplink https://github.com/hagish/kalimba;
+#X text 29 571 Kalimba;
+#X obj 139 199 connected;
+#X obj 233 227 bng 15 250 50 0 empty sine_off empty 17 7 0 10 -262144
+-1 -1;
+#X msg 76 89 \; sine_off bang \;;
+#X connect 0 0 10 0;
+#X connect 1 0 8 0;
