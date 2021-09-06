@@ -11,6 +11,6 @@ Neural networks are incredibly powerful tools that can be used to solve a multit
 https://docs.google.com/document/d/1-niZXkwcgNgtpviwokYuK3WOfayPpk55wnwlTvyHRT8/view
 
 
-**Link to game: **
+**Link to game:**
 
 https://reniby.itch.io/cnn
